@@ -1,0 +1,25 @@
+const data = {
+  deck: [
+  "greater secrets": [
+    {
+      "title": "The Fool",
+      "numeral": 0
+    }, {
+      "title": "The World",
+      "numeral": 21
+    }
+  ],
+  "lesser secrets": [
+    {
+      "title": "one of",
+      "numeral": 1,
+      "suite": "cups"
+    }, 
+    {
+      "title": "King of",
+      "numeral": 15,
+      "suite": "cups"
+    }
+  ]
+ ]
+};
