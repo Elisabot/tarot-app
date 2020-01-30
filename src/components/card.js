@@ -2,32 +2,53 @@ import React from 'react';
 import styled from 'styled-components';
 
 export function Card(props) {
+  console.log(greatArcana)
   return (
     <CardContainer className="card-container">
       <CardBody>
-        <CardText>{props.title}</CardText>
+        <CardText>
+        <h4>{card.numeral}</h4>
+        <h2>{card.title}</h2>
+        <CardEmoji>🌐</CardEmoji>
+        </CardText>
       </CardBody>
     </CardContainer>
   );
 }
 
 const CardContainer = styled.div`
-  margin: 24px;
+  display: flex;
+  justify-content: center;
 `;
-
 const CardBody = styled.div`
   width: 350px;
   height: 490px;
   border: 2px solid deeppink;
   border-radius: 6px;
   background-color: #343942;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 24px;
 `;
 const CardText = styled.div`
-  font-family: 'Droid Sans';
+  font-family: 'Mali';
   font-weight: normal;
-  color: light-grey;
-`;
+  color: lightgrey;
 
+  margin: auto;
+`;
+const CardEmoji = styled.div`
+  font-size: 120px;
+`
+// just one card 
+let card = {
+  title: 'The World',
+  numeral: 21,
+  arcana: 'greater'
+}
+// some mock json data with deck boundaries
 const data = {
   deck: [
     ('greater secrets': [
@@ -55,6 +76,5 @@ const data = {
   ]
 };
 
-// lol idk what you're up to here but get some sleep
-export const greatArcana = data.deck.filter(arcana => arcana === 'greater secrets');
+const greatArcana = data.deck.filter(arcana => arcana === 'greater secrets');
 
