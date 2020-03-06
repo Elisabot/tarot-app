@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Card } from './components/card';
+import CardGallery from './views/cardGallery';
 
 function App(data) {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Let&apos;s make a tarot thing</h1>
-      </header>
+      <header className="App-header"></header>
       <Card />
     </div>
   );

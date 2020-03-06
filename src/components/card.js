@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import data from './data.json';
 
 const CardContainer = styled.div`
   display: flex;
@@ -19,8 +18,8 @@ const CardBody = styled.div`
   margin-bottom: 24px;
 `;
 const CardText = styled.div`
-  font-weight: 100;
-  color: lightgrey;
+  font-weight: 700;
+  color: #eeeeee;
 
   margin: auto;
 `;
@@ -34,16 +33,13 @@ const card = {
   arcana: 'greater'
 };
 
-// just the great arcana
-const greatArcana = data.deck.filter(arcana => arcana === 'greaterSecrets');
-
 export function Card(props) {
   return (
     <CardContainer className="card-container">
       <CardBody>
         <CardText>
-          <h4>{card.numeral}</h4>
-          <h2>{card.title}</h2>
+          <p>{card.numeral}</p>
+          <p>{card.title.toUpperCase()}</p>
           <CardEmoji role="img" aria-label="emoji">
             🌐
           </CardEmoji>
