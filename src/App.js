@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import { Card } from './components/card';
 
-function App() {
+function App(data) {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Let's make a tarot thing</p>
+        <h1>Let&apos;s make a tarot thing</h1>
       </header>
       <Card />
     </div>
