@@ -1,0 +1,115 @@
+{
+  "deck": [
+    {
+      "greater_secrets": [
+        {
+          "title": "The Fool",
+          "numeral": 0
+        },
+        {
+          "title": "The Magician",
+          "numeral": 1
+        },
+        {
+          "title": "The High Priestess",
+          "numeral": 2
+        },
+        {
+          "title": "The Empress",
+          "numeral": 3
+        },
+        {
+          "title": "The Emperor",
+          "numeral": 4
+        },
+        {
+          "title": "The Hierophant",
+          "numeral": 5
+        },
+        {
+          "title": "The Lovers",
+          "numeral": 6
+        },
+        {
+          "title": "The Chariot",
+          "numeral": 7
+        },
+        {
+          "title": "Justice",
+          "numeral": 8
+        },
+        {
+          "title": "The Hermit",
+          "numeral": 9
+        },
+        {
+          "title": "Wheel of Fortune",
+          "numeral": 10
+        },
+        {
+          "title": "Strength",
+          "numeral": 11
+        },
+        {
+          "title": "The Hanged Man",
+          "numeral": 12
+        },
+        {
+          "title": "Death",
+          "numeral": 13
+        },
+        {
+          "title": "Temperance",
+          "numeral": 14
+        },
+        {
+          "title": "The Devil",
+          "numeral": 15
+        },
+        {
+          "title": "The Tower",
+          "numeral": 16
+        },
+        {
+          "title": "The Star",
+          "numeral": 17
+        },
+        {
+          "title": "The Moon",
+          "numeral": 18
+        },
+        {
+          "title": "The Sun",
+          "numeral": 19
+        },
+        {
+          "title": "Judgement",
+          "numeral": 20
+        },
+        {
+          "title": "The World",
+          "numeral": 21
+        }
+      ]
+    },
+    {
+      "lesser_secrets": [
+        {
+          "title": "one of",
+          "numeral": 1,
+          "suite": "cups"
+        },
+        {
+          "title": "two of",
+          "numeral": 2,
+          "suite": "cups"
+        },
+        {
+          "title": "King of",
+          "numeral": 15,
+          "suite": "cups"
+        }
+      ]
+    }
+  ]
+}
