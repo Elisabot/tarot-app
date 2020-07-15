@@ -1,10 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-import data from './data.json';
+
+// just one card
+const card = {
+  title: 'The World',
+  numeral: 21,
+  arcana: 'greater'
+};
+
+// TODO: pass props to card in the gallery component
+export function Card() {
+  return (
+    <CardContainer className="card-container">
+      <CardBody>
+        <CardText>
+          <p>{card.numeral}</p>
+          <p>{card.title.toUpperCase()}</p>
+          <CardEmoji role="img" aria-label="emoji">
+            🌐
+          </CardEmoji>
+        </CardText>
+      </CardBody>
+    </CardContainer>
+  );
+}
 
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
+  height: 100vh;
 `;
 const CardBody = styled.div`
   width: 350px;
@@ -19,36 +43,11 @@ const CardBody = styled.div`
   margin-bottom: 24px;
 `;
 const CardText = styled.div`
-  font-weight: 100;
-  color: lightgrey;
+  font-weight: 700;
+  color: #eeeeee;
 
   margin: auto;
 `;
 const CardEmoji = styled.span`
   font-size: 120px;
 `;
-// just one card
-const card = {
-  title: 'The World',
-  numeral: 21,
-  arcana: 'greater'
-};
-
-// just the great arcana
-const greatArcana = data.deck.filter(arcana => arcana === 'greaterSecrets');
-
-export function Card(props) {
-  return (
-    <CardContainer className="card-container">
-      <CardBody>
-        <CardText>
-          <h4>{card.numeral}</h4>
-          <h2>{card.title}</h2>
-          <CardEmoji role="img" aria-label="emoji">
-            🌐
-          </CardEmoji>
-        </CardText>
-      </CardBody>
-    </CardContainer>
-  );
-}
